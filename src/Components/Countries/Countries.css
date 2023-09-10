@@ -1,0 +1,96 @@
+.countriesDiv h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.countriesSection{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.visitedCountry{
+    width: 25vw;
+    /* background-color: lightcyan; */
+    /* color: #1a1a1a; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.visitedStatus{
+    position: sticky;
+    top: 10px;
+}
+.visitedList{
+    padding: 10px;
+    position: sticky;
+    top: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.visitedList li {
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 15vw;
+}
+.visitedData{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-style: italic;
+}
+.visitedStatus{
+    padding-top: 20px;
+    font-weight: 600;
+}
+.listFlags{
+    width: 50px;
+}
+.divider{
+    width: 2px;
+    background-color: gray;
+}
+.SingleCountryDiv{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2 , 45%);
+}
+@media (max-width:768px) {
+    .SingleCountryDiv{
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        width: 55vw;
+    }
+    .visitedCountry{
+        width: 40vw;
+    }
+    .visitedList li{
+        width: 90%;
+    }
+    .visitedStatus{
+        font-size: 14px;
+    }
+    .visitedData{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        overflow: hidden;
+        font-size: 10px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}

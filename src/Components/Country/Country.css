@@ -1,0 +1,45 @@
+.country{
+    border: 2px solid wheat;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 20px 20px 25px lightgray;
+    transition: all 0.3s ease-out;
+}
+.country:hover{
+    transition: all 0.3s ease-out;
+    box-shadow: -10px 20px 25px lightgray;
+}
+.country img{
+    width: 150px; 
+    height: 100px; 
+}
+
+.visitButton{
+    font-size: 16px;
+    padding: 10px;
+    background-color: wheat;
+    color: #1a1a1a;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .country{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .country img{
+        width: 45%;
+        height: 100px;
+    }
+    .CountryData{
+        margin-left: 10px;
+    }
+}
